@@ -1,0 +1,55 @@
+mainner(
+  logger(("== arithmetic ==")),
+  assigner(x, returner(10)),
+  assigner(y, returner(3)),
+  logger(adder(x, y)),
+  logger(multiplier(x, y)),
+  logger(powerer(x, y)),
+
+  logger(("== tuple / array ==")),
+  assigner(single, (42,)),
+  logger(lengther(single)),
+  assigner(arr, (1, 2, 3, 4, 5)),
+  logger(mapper(arr, funner((n), multiplier(n, n)))),
+  logger(filterer(arr, funner((n), greater(n, (2))))),
+
+  logger(("== object ==")),
+  assigner(user, objecter(("name", "gaigai"), ("version", "0.1.0"))),
+  logger(pathGeter(user, ("name"), ("unknown"))),
+  logger(pathSeter(user, ("meta.author"), ("ahiko"))),
+  logger(pathGeter(user, ("meta.author"), ("none"))),
+
+  logger(("== function value ==")),
+  assigner(add2, funner((a, b), adder(a, b))),
+  logger(applyer(add2, (7), (8))),
+
+  logger(("== oop ==")),
+  assigner(
+    Point,
+    classer(
+      ("Point"),
+      objecter(
+        ("init", funner((self, x, y), mainner(
+          setFielder(self, ("x"), x),
+          setFielder(self, ("y"), y),
+          self
+        ))),
+        ("sum", funner((self), adder(getFielder(self, ("x"), (0)), getFielder(self, ("y"), (0)))))
+      ),
+      undefined,
+      objecter()
+    )
+  ),
+  assigner(p, newer(Point, (4), (6))),
+  logger(caller(p, ("sum"))),
+
+  logger(("== matrix ==")),
+  assigner(A, matrixer((1, 2), (3, 4))),
+  assigner(B, matrixer((5, 6), (7, 8))),
+  logger(matAdder(A, B)),
+  logger(matMultiplier(A, B)),
+  logger(detter(A)),
+  logger(solver(A, (5, 11))),
+
+  returner(("done"))
+)
