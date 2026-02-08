@@ -93,7 +93,7 @@ externalTypes: {
 const fs = require("fs");
 const { runRairai } = require("./rairai.js");
 
-const source = fs.readFileSync("./sample.rairai", "utf8");
+const source = fs.readFileSync("./rairai-sample.raigai", "utf8");
 const result = runRairai(source, {}, {
   externals: {
     pow: Math.pow,
@@ -107,3 +107,4 @@ const result = runRairai(source, {}, {
 
 console.log(result.value);
 ```
+
