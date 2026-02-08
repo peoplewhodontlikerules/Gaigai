@@ -1,0 +1,40 @@
+mainner(
+  logger(("== Gairai sample ==")),
+
+  logger(("== arithmetic / logic ==")),
+  assigner(a, (12)),
+  assigner(b, (5)),
+  logger(adder(a, b)),
+  logger(multiplier(a, b)),
+  logger(ifer(greater(a, b), ("a > b"), ("a <= b"))),
+
+  logger(("== guarded loops (safe range) ==")),
+  assigner(sum, (0)),
+  forrer(i, (1), (6),
+    assigner(sum, adder(sum, i))
+  ),
+  logger(sum),
+  timeser((3),
+    funner((idx), logger(concatener(("tick:"), stringer(idx))))
+  ),
+
+  logger(("== tuples / objects ==")),
+  assigner(arr, (1, 2, 3, 4)),
+  logger(mapper(arr, funner((n), multiplier(n, n)))),
+  assigner(cfg, objecter(("app", objecter(("name", "gairai"))))),
+  logger(pathSeter(cfg, ("app.version"), ("1.0.0"))),
+  logger(pathGeter(cfg, ("app.version"), ("none"))),
+
+  logger(("== matrix ==")),
+  assigner(A, matrixer((1, 2), (3, 4))),
+  assigner(B, matrixer((5, 6), (7, 8))),
+  logger(matMultiplier(A, B)),
+  logger(detter(A)),
+
+  logger(("== externals (optional) ==")),
+  logger(tryer(helloer(("world")), ("helloer is not provided"))),
+  logger(tryer(externaler(("pow"), (2), (10)), ("pow is not provided"))),
+  logger(tryer(externaler(("hash"), ("gairai")), ("hash is not provided"))),
+
+  returner(("done: gairai sample"))
+)

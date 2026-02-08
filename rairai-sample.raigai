@@ -1,0 +1,39 @@
+// rairai-sample.raigai
+// Required externals:
+// - pow(number, number) -> number
+// - slugify(string) -> string
+
+const title: string = "Rairai hardened DSL";
+print(title);
+
+fn square(n: number): number => n * n;
+
+fn mean(xs: list<number>): number {
+  let total: number = 0;
+  let count: number = 0;
+  for (x in xs) {
+    total += x;
+    count += 1;
+  }
+  return total / count;
+}
+
+let nums: list<number> = 1..8;
+let avg: number = nums |> mean;
+print("avg=" + toString(avg));
+
+let p: number = pow(2, 10);
+let slug: string = external("slugify", "Rairai DSL Example");
+print("pow=" + toString(p));
+print("slug=" + slug);
+
+let i: number = 0;
+let accum: number = 0;
+while (i < len(nums)) {
+  accum += square(nums[i]);
+  i += 1;
+}
+
+print("sumOfSquares=" + toString(accum));
+
+accum;

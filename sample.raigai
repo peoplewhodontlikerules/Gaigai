@@ -1,0 +1,53 @@
+const title: string = "Raigai readable DSL";
+print(title);
+
+fn twice(n: number): number => n * 2;
+
+fn average(nums: list<number>): number {
+  let total: number = 0;
+  let count: number = 0;
+  for (n in nums) {
+    total += n;
+    count += 1;
+  }
+  return total / count;
+}
+
+fn clampMin(value: number, min: number): number {
+  if (value < min) {
+    return min;
+  }
+  return value;
+}
+
+fn grade(score: number): string {
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else {
+    return "C";
+  }
+}
+
+let scores: list<number> = [82, 75, 91, 88];
+let avg: number = scores |> average;
+let safeAvg: number = avg |> clampMin(0);
+let label: string = safeAvg |> grade;
+
+print("avg=" + toString(avg));
+print("grade=" + label);
+
+let stars: list<number> = 1..5;
+let i: number = 0;
+let rangeSum: number = 0;
+while (i < len(stars)) {
+  rangeSum += stars[i];
+  i += 1;
+}
+
+print("rangeSum=" + toString(rangeSum));
+print("twice(7)=" + toString(twice(7)));
+print("scoresSum=" + toString(sum(scores)));
+
+safeAvg;
