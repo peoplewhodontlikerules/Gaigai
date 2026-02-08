@@ -1,0 +1,108 @@
+{
+  "mainner skeleton": {
+    "scope": "gaigai",
+    "prefix": "mainner",
+    "body": [
+      "mainner(",
+      "\t$1",
+      ")"
+    ],
+    "description": "Gaigai mainner(...) skeleton"
+  },
+  "assigner": {
+    "scope": "gaigai",
+    "prefix": "assigner",
+    "body": [
+      "assigner(${1:name}, ${2:value})"
+    ],
+    "description": "Gaigai assigner(var, value)"
+  },
+  "funner": {
+    "scope": "gaigai",
+    "prefix": "funner",
+    "body": [
+      "funner((${1:param}), ${2:body})"
+    ],
+    "description": "Gaigai function value"
+  },
+  "classer": {
+    "scope": "gaigai",
+    "prefix": "classer",
+    "body": [
+      "classer(",
+      "\t(\"${1:ClassName}\"),",
+      "\tobjecter(",
+      "\t\t(\"init\", funner((self${2:,arg}), mainner(",
+      "\t\t\t$0,",
+      "\t\t\tself",
+      "\t\t))),",
+      "\t\t(\"method\", funner((self), returner(undefined)))",
+      "\t),",
+      "\t${3:undefined},",
+      "\tobjecter()",
+      ")"
+    ],
+    "description": "Gaigai class declaration"
+  },
+  "subclasser": {
+    "scope": "gaigai",
+    "prefix": "subclasser",
+    "body": [
+      "subclasser(",
+      "\t${1:BaseClass},",
+      "\t(\"${2:SubClass}\"),",
+      "\tobjecter(",
+      "\t\t(\"init\", funner((self${3:,arg}), mainner(",
+      "\t\t\tsuperCaller(self,(\"init\")${4:,arg}),",
+      "\t\t\tself",
+      "\t\t)))",
+      "\t),",
+      "\tobjecter()",
+      ")"
+    ],
+    "description": "Gaigai subclass declaration"
+  },
+  "newer": {
+    "scope": "gaigai",
+    "prefix": "newer",
+    "body": [
+      "newer(${1:ClassName}${2:,arg})"
+    ],
+    "description": "Gaigai class instantiation"
+  },
+  "caller": {
+    "scope": "gaigai",
+    "prefix": "caller",
+    "body": [
+      "caller(${1:target}, (\"${2:method}\")${3:,arg})"
+    ],
+    "description": "Gaigai dynamic method call"
+  },
+  "matrixer": {
+    "scope": "gaigai",
+    "prefix": "matrixer",
+    "body": [
+      "matrixer(",
+      "\t(${1:1}, ${2:2}),",
+      "\t(${3:3}, ${4:4})",
+      ")"
+    ],
+    "description": "Gaigai matrix literal"
+  },
+  "matMultiplier": {
+    "scope": "gaigai",
+    "prefix": "matMultiplier",
+    "body": [
+      "matMultiplier(${1:A}, ${2:B})"
+    ],
+    "description": "Gaigai matrix multiplication"
+  },
+  "solver": {
+    "scope": "gaigai",
+    "prefix": "solver",
+    "body": [
+      "solver(${1:A}, ${2:b})"
+    ],
+    "description": "Gaigai linear solver"
+  }
+}

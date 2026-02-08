@@ -1,0 +1,1870 @@
+{
+  "sourceFile": "gaigai.js",
+  "generatedAt": "2026-02-08T08:59:26.034Z",
+  "builtins": [
+    {
+      "name": "mainner",
+      "minArity": null,
+      "maxArity": null,
+      "arityText": "unknown",
+      "category": "core",
+      "line": 1068
+    },
+    {
+      "name": "returner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1076
+    },
+    {
+      "name": "assigner",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "core",
+      "line": 1081
+    },
+    {
+      "name": "deleter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1094
+    },
+    {
+      "name": "exister",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1108
+    },
+    {
+      "name": "adder",
+      "minArity": null,
+      "maxArity": null,
+      "arityText": "unknown",
+      "category": "numeric",
+      "line": 1118
+    },
+    {
+      "name": "subtractor",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1120
+    },
+    {
+      "name": "multiplier",
+      "minArity": null,
+      "maxArity": null,
+      "arityText": "unknown",
+      "category": "numeric",
+      "line": 1128
+    },
+    {
+      "name": "divider",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1130
+    },
+    {
+      "name": "modder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1138
+    },
+    {
+      "name": "powerer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1146
+    },
+    {
+      "name": "inverter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1154
+    },
+    {
+      "name": "lesser",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1159
+    },
+    {
+      "name": "lessEqualer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1167
+    },
+    {
+      "name": "greater",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1175
+    },
+    {
+      "name": "greaterEqualer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1183
+    },
+    {
+      "name": "equaler",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1191
+    },
+    {
+      "name": "notequaler",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1199
+    },
+    {
+      "name": "noter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1207
+    },
+    {
+      "name": "ander",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1212
+    },
+    {
+      "name": "orer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1219
+    },
+    {
+      "name": "nander",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1226
+    },
+    {
+      "name": "xorer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "numeric",
+      "line": 1233
+    },
+    {
+      "name": "miner",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "numeric",
+      "line": 1241
+    },
+    {
+      "name": "maxer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "numeric",
+      "line": 1254
+    },
+    {
+      "name": "abser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1267
+    },
+    {
+      "name": "floorrer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1272
+    },
+    {
+      "name": "ceiler",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1277
+    },
+    {
+      "name": "rounder",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1282
+    },
+    {
+      "name": "truncer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1287
+    },
+    {
+      "name": "sqrter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1292
+    },
+    {
+      "name": "signer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1297
+    },
+    {
+      "name": "siner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1302
+    },
+    {
+      "name": "coser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1307
+    },
+    {
+      "name": "taner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1312
+    },
+    {
+      "name": "loger",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "numeric",
+      "line": 1317
+    },
+    {
+      "name": "expeer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1329
+    },
+    {
+      "name": "clampper",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "numeric",
+      "line": 1334
+    },
+    {
+      "name": "randomer",
+      "minArity": 0,
+      "maxArity": 2,
+      "arityText": "0..2",
+      "category": "numeric",
+      "line": 1350
+    },
+    {
+      "name": "randomInter",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "numeric",
+      "line": 1366
+    },
+    {
+      "name": "hypotter",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "numeric",
+      "line": 1389
+    },
+    {
+      "name": "deg2rader",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1394
+    },
+    {
+      "name": "rad2deger",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1399
+    },
+    {
+      "name": "lerper",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "numeric",
+      "line": 1404
+    },
+    {
+      "name": "sigmoider",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1415
+    },
+    {
+      "name": "tanher",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1423
+    },
+    {
+      "name": "meaner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1428
+    },
+    {
+      "name": "medianer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1434
+    },
+    {
+      "name": "varianceer",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "numeric",
+      "line": 1440
+    },
+    {
+      "name": "stddever",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "numeric",
+      "line": 1447
+    },
+    {
+      "name": "sumer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1454
+    },
+    {
+      "name": "proder",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1460
+    },
+    {
+      "name": "nower",
+      "minArity": 0,
+      "maxArity": 0,
+      "arityText": "0",
+      "category": "numeric",
+      "line": 1466
+    },
+    {
+      "name": "isoNower",
+      "minArity": 0,
+      "maxArity": 0,
+      "arityText": "0",
+      "category": "numeric",
+      "line": 1471
+    },
+    {
+      "name": "dater",
+      "minArity": 0,
+      "maxArity": 1,
+      "arityText": "0..1",
+      "category": "numeric",
+      "line": 1476
+    },
+    {
+      "name": "dateParseer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "numeric",
+      "line": 1486
+    },
+    {
+      "name": "dateAdder",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "numeric",
+      "line": 1492
+    },
+    {
+      "name": "typeer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1517
+    },
+    {
+      "name": "stringer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1527
+    },
+    {
+      "name": "numberer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1532
+    },
+    {
+      "name": "inter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1537
+    },
+    {
+      "name": "booler",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1542
+    },
+    {
+      "name": "isNaner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1547
+    },
+    {
+      "name": "isFiniteer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1552
+    },
+    {
+      "name": "isIntegerer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1557
+    },
+    {
+      "name": "isArrayer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1562
+    },
+    {
+      "name": "isObjecter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1567
+    },
+    {
+      "name": "isFunctioner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1572
+    },
+    {
+      "name": "ifer",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "control",
+      "line": 1579
+    },
+    {
+      "name": "whiler",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "control",
+      "line": 1587
+    },
+    {
+      "name": "forrer",
+      "minArity": null,
+      "maxArity": null,
+      "arityText": "unknown",
+      "category": "control",
+      "line": 1597
+    },
+    {
+      "name": "timeser",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "control",
+      "line": 1639
+    },
+    {
+      "name": "switcher",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "control",
+      "line": 1656
+    },
+    {
+      "name": "incrementer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1696
+    },
+    {
+      "name": "decrementer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1708
+    },
+    {
+      "name": "defaultor",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "core",
+      "line": 1720
+    },
+    {
+      "name": "coalescer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "core",
+      "line": 1730
+    },
+    {
+      "name": "tryer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "core",
+      "line": 1741
+    },
+    {
+      "name": "thrower",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1754
+    },
+    {
+      "name": "logger",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "core",
+      "line": 1764
+    },
+    {
+      "name": "lengther",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 1776
+    },
+    {
+      "name": "indexer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1786
+    },
+    {
+      "name": "sliceer",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "array",
+      "line": 1798
+    },
+    {
+      "name": "joiner",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1813
+    },
+    {
+      "name": "concatener",
+      "minArity": null,
+      "maxArity": null,
+      "arityText": "unknown",
+      "category": "array",
+      "line": 1825
+    },
+    {
+      "name": "pusher",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1829
+    },
+    {
+      "name": "popper",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 1841
+    },
+    {
+      "name": "unshifter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 1851
+    },
+    {
+      "name": "shifter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1861
+    },
+    {
+      "name": "setIndexer",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "array",
+      "line": 1873
+    },
+    {
+      "name": "cloner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 1888
+    },
+    {
+      "name": "rangeer",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "array",
+      "line": 1899
+    },
+    {
+      "name": "mapper",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1916
+    },
+    {
+      "name": "filterer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1929
+    },
+    {
+      "name": "reducer",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "array",
+      "line": 1942
+    },
+    {
+      "name": "everyer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1958
+    },
+    {
+      "name": "somer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1971
+    },
+    {
+      "name": "finder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1984
+    },
+    {
+      "name": "findIndexer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 1997
+    },
+    {
+      "name": "includer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2010
+    },
+    {
+      "name": "flatter",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "array",
+      "line": 2023
+    },
+    {
+      "name": "flatMaper",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2030
+    },
+    {
+      "name": "sorter",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "array",
+      "line": 2048
+    },
+    {
+      "name": "reverser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 2061
+    },
+    {
+      "name": "uniquer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 2067
+    },
+    {
+      "name": "deepCloner",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 2073
+    },
+    {
+      "name": "chunker",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2079
+    },
+    {
+      "name": "zipper",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "array",
+      "line": 2091
+    },
+    {
+      "name": "unzipper",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 2096
+    },
+    {
+      "name": "firster",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "array",
+      "line": 2114
+    },
+    {
+      "name": "laster",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "array",
+      "line": 2123
+    },
+    {
+      "name": "findLaster",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2132
+    },
+    {
+      "name": "findLastIndexer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2144
+    },
+    {
+      "name": "partitioner",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2156
+    },
+    {
+      "name": "groupByer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2170
+    },
+    {
+      "name": "countByer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2182
+    },
+    {
+      "name": "plucker",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2194
+    },
+    {
+      "name": "rotateer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "array",
+      "line": 2204
+    },
+    {
+      "name": "shuffleer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "array",
+      "line": 2210
+    },
+    {
+      "name": "sampleer",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "array",
+      "line": 2216
+    },
+    {
+      "name": "inserter",
+      "minArity": 3,
+      "maxArity": "Infinity",
+      "arityText": "3..Infinity",
+      "category": "array",
+      "line": 2229
+    },
+    {
+      "name": "splicer",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "array",
+      "line": 2243
+    },
+    {
+      "name": "objecter",
+      "minArity": null,
+      "maxArity": null,
+      "arityText": "unknown",
+      "category": "object",
+      "line": 2260
+    },
+    {
+      "name": "geter",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "object",
+      "line": 2276
+    },
+    {
+      "name": "seter",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "object",
+      "line": 2289
+    },
+    {
+      "name": "keyser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "object",
+      "line": 2304
+    },
+    {
+      "name": "valuer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "object",
+      "line": 2314
+    },
+    {
+      "name": "merger",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "object",
+      "line": 2324
+    },
+    {
+      "name": "haser",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "object",
+      "line": 2337
+    },
+    {
+      "name": "delKeyer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "object",
+      "line": 2348
+    },
+    {
+      "name": "entrieser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "object",
+      "line": 2364
+    },
+    {
+      "name": "fromEntrieser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "object",
+      "line": 2380
+    },
+    {
+      "name": "deepMerger",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "object",
+      "line": 2386
+    },
+    {
+      "name": "pathGeter",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "object",
+      "line": 2400
+    },
+    {
+      "name": "pathSeter",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "object",
+      "line": 2406
+    },
+    {
+      "name": "pathDeleter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "object",
+      "line": 2412
+    },
+    {
+      "name": "picker",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "object",
+      "line": 2418
+    },
+    {
+      "name": "omitter",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "object",
+      "line": 2434
+    },
+    {
+      "name": "mapObjecter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "object",
+      "line": 2449
+    },
+    {
+      "name": "filterObjecter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "object",
+      "line": 2463
+    },
+    {
+      "name": "classer",
+      "minArity": 2,
+      "maxArity": 4,
+      "arityText": "2..4",
+      "category": "oop",
+      "line": 2479
+    },
+    {
+      "name": "subclasser",
+      "minArity": 3,
+      "maxArity": 4,
+      "arityText": "3..4",
+      "category": "oop",
+      "line": 2489
+    },
+    {
+      "name": "newer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "oop",
+      "line": 2499
+    },
+    {
+      "name": "caller",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "oop",
+      "line": 2515
+    },
+    {
+      "name": "superCaller",
+      "minArity": 2,
+      "maxArity": "Infinity",
+      "arityText": "2..Infinity",
+      "category": "oop",
+      "line": 2532
+    },
+    {
+      "name": "methoder",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "oop",
+      "line": 2546
+    },
+    {
+      "name": "staticMethoder",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "oop",
+      "line": 2560
+    },
+    {
+      "name": "getFielder",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "oop",
+      "line": 2574
+    },
+    {
+      "name": "setFielder",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "oop",
+      "line": 2584
+    },
+    {
+      "name": "hasFielder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "oop",
+      "line": 2596
+    },
+    {
+      "name": "delFielder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "oop",
+      "line": 2605
+    },
+    {
+      "name": "staticGeter",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "oop",
+      "line": 2619
+    },
+    {
+      "name": "staticSeter",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "oop",
+      "line": 2630
+    },
+    {
+      "name": "classNameer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2642
+    },
+    {
+      "name": "instanceOfer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "oop",
+      "line": 2653
+    },
+    {
+      "name": "methodNameser",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "oop",
+      "line": 2659
+    },
+    {
+      "name": "isClasser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2673
+    },
+    {
+      "name": "isInstanceer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2679
+    },
+    {
+      "name": "classBaseer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2685
+    },
+    {
+      "name": "classChainser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2696
+    },
+    {
+      "name": "fieldKeyser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2711
+    },
+    {
+      "name": "staticKeyser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "oop",
+      "line": 2720
+    },
+    {
+      "name": "bindMethoder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "oop",
+      "line": 2741
+    },
+    {
+      "name": "constructer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "oop",
+      "line": 2751
+    },
+    {
+      "name": "funner",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "function",
+      "line": 2768
+    },
+    {
+      "name": "applyer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "function",
+      "line": 2808
+    },
+    {
+      "name": "partialer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "function",
+      "line": 2820
+    },
+    {
+      "name": "pipeer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "function",
+      "line": 2832
+    },
+    {
+      "name": "composeer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "function",
+      "line": 2845
+    },
+    {
+      "name": "memoizer",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "function",
+      "line": 2858
+    },
+    {
+      "name": "onceer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "function",
+      "line": 2886
+    },
+    {
+      "name": "curryer",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "function",
+      "line": 2904
+    },
+    {
+      "name": "spreadApplyer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "function",
+      "line": 2921
+    },
+    {
+      "name": "tapper",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "function",
+      "line": 2933
+    },
+    {
+      "name": "constanter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "function",
+      "line": 2945
+    },
+    {
+      "name": "predicateNoter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "function",
+      "line": 2954
+    },
+    {
+      "name": "replacer",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "string",
+      "line": 2966
+    },
+    {
+      "name": "spliter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 2978
+    },
+    {
+      "name": "trimmer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 2984
+    },
+    {
+      "name": "lowerer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 2990
+    },
+    {
+      "name": "upperer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 2996
+    },
+    {
+      "name": "includeser",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 3002
+    },
+    {
+      "name": "startsWither",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 3008
+    },
+    {
+      "name": "endsWither",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 3014
+    },
+    {
+      "name": "repeater",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 3020
+    },
+    {
+      "name": "padStarter",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3026
+    },
+    {
+      "name": "padEnder",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3032
+    },
+    {
+      "name": "jsonStringifyer",
+      "minArity": 1,
+      "maxArity": 2,
+      "arityText": "1..2",
+      "category": "string",
+      "line": 3038
+    },
+    {
+      "name": "jsonParser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 3044
+    },
+    {
+      "name": "charAter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 3050
+    },
+    {
+      "name": "charCodeer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "string",
+      "line": 3060
+    },
+    {
+      "name": "fromCodePointerer",
+      "minArity": 1,
+      "maxArity": "Infinity",
+      "arityText": "1..Infinity",
+      "category": "string",
+      "line": 3070
+    },
+    {
+      "name": "substringer",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3075
+    },
+    {
+      "name": "regexTester",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3087
+    },
+    {
+      "name": "regexMatcher",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3098
+    },
+    {
+      "name": "regexAller",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3109
+    },
+    {
+      "name": "regexReplacer",
+      "minArity": 3,
+      "maxArity": 4,
+      "arityText": "3..4",
+      "category": "string",
+      "line": 3128
+    },
+    {
+      "name": "regexSpliter",
+      "minArity": 2,
+      "maxArity": 3,
+      "arityText": "2..3",
+      "category": "string",
+      "line": 3140
+    },
+    {
+      "name": "regexEscapeer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 3146
+    },
+    {
+      "name": "urlEncodeer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 3152
+    },
+    {
+      "name": "urlDecodeer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 3158
+    },
+    {
+      "name": "base64Encoder",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 3164
+    },
+    {
+      "name": "base64Decoder",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "string",
+      "line": 3170
+    },
+    {
+      "name": "matrixer",
+      "minArity": 0,
+      "maxArity": "Infinity",
+      "arityText": "0..Infinity",
+      "category": "matrix",
+      "line": 3181
+    },
+    {
+      "name": "shaper",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3201
+    },
+    {
+      "name": "ismatrixer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3213
+    },
+    {
+      "name": "matAdder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3220
+    },
+    {
+      "name": "matSubtractor",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3226
+    },
+    {
+      "name": "matHadamarder",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3232
+    },
+    {
+      "name": "matScaler",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3239
+    },
+    {
+      "name": "matMultiplier",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3250
+    },
+    {
+      "name": "matVecMultiplier",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3257
+    },
+    {
+      "name": "transposer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3264
+    },
+    {
+      "name": "eyer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3270
+    },
+    {
+      "name": "detter",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3277
+    },
+    {
+      "name": "solver",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3283
+    },
+    {
+      "name": "matIndexer",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "matrix",
+      "line": 3290
+    },
+    {
+      "name": "matSeter",
+      "minArity": 4,
+      "maxArity": 4,
+      "arityText": "4",
+      "category": "matrix",
+      "line": 3302
+    },
+    {
+      "name": "tracer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3317
+    },
+    {
+      "name": "dotter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3323
+    },
+    {
+      "name": "normer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3329
+    },
+    {
+      "name": "matFlattener",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3335
+    },
+    {
+      "name": "diagMatrixer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3346
+    },
+    {
+      "name": "matPowerer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3361
+    },
+    {
+      "name": "matInverser",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3367
+    },
+    {
+      "name": "ranker",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3373
+    },
+    {
+      "name": "outerProducter",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3379
+    },
+    {
+      "name": "rower",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3385
+    },
+    {
+      "name": "columner",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3391
+    },
+    {
+      "name": "diagVectorer",
+      "minArity": 1,
+      "maxArity": 1,
+      "arityText": "1",
+      "category": "matrix",
+      "line": 3397
+    },
+    {
+      "name": "kroneckerer",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3403
+    },
+    {
+      "name": "matMapper",
+      "minArity": 2,
+      "maxArity": 2,
+      "arityText": "2",
+      "category": "matrix",
+      "line": 3409
+    },
+    {
+      "name": "matReducer",
+      "minArity": 3,
+      "maxArity": 3,
+      "arityText": "3",
+      "category": "matrix",
+      "line": 3420
+    }
+  ]
+}
